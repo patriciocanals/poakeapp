@@ -1,0 +1,60 @@
+.img-logo {
+    min-width: 100%;
+}
+.btn {
+  width: 120px;
+}
+.normal {
+    background: #A8A77A;
+  }
+  .fighting {
+    background: #C22E28;
+  }
+  .flying {
+    background: #A98FF3;
+  }
+  .poison {
+    background: #A33EA1;
+  }
+  .ground {
+    background: #E2BF65;
+  }
+  .rock {
+    background: #B6A136;
+  }
+  .bug {
+    background: #A6B91A;
+  }
+  .ghost {
+    background: #735797;
+  }
+  .steel {
+    background: #B7B7CE;
+  }
+  .fire {
+    background: #EE8130;
+  }
+  .water {
+    background: #6390F0;
+  }
+  .grass {
+    background: #7AC74C;
+  }
+  .electric {
+    background: #F7D02C;
+  }
+  .psychic {
+    background: #F95587;
+  }
+  .ice {
+    background: #96D9D6;
+  }
+  .dragon {
+    background: #6F35FC;
+  }
+  .dark {
+    background: #705746;
+  }
+  .fairy {
+    background: #D685AD;
+  }
