@@ -9,7 +9,9 @@ export default function List(){
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <Header />
-            <h1>About</h1>
+            <div className="bg-dark">
+                <h1>About this Project</h1>
+            </div>
         </>
     )
 }
