@@ -1,0 +1,6 @@
+.sectionAbout {
+    height: 100vh;
+    background: url(../public/home-wallpaper.gif) no-repeat center center fixed;
+    background-size: cover;
+    animation: fadeIn 3s;
+}

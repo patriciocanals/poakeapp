@@ -18,9 +18,9 @@
     animation: fadeIn 9s;
     width: 90px;
 }
-.sectionHeader {
+.sectionHome {
     height: 100vh;
-    background: url(../public/background.png) no-repeat center center fixed;
+    background: url(../public/home-wallpaper.gif) no-repeat center center fixed;
     background-size: cover;
     animation: fadeIn 3s;
 }

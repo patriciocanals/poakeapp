@@ -2,9 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from 'next/link';
 import styles from '../styles/Home.module.css'
-import { Neucha } from "next/font/google";
+import { Dosis } from "next/font/google";
 
-const neucha = Neucha({ weight: '400', subsets: ['latin'] });
+const dosis = Dosis({ weight: '500', subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <section
-        class={`${styles.sectionHeader} d-flex justify-content-center align-items-center flex-column`}
+        class={`${styles.sectionHome} d-flex justify-content-center align-items-center flex-column`}
       >
         <div className="d-flex flex-row align-items-center justify-content-center flex-wrap">
           <Image
@@ -25,18 +25,18 @@ export default function Home() {
             height="300"
             alt="pokeball"
           />
-          <h1 className={`${styles.fadeText} ${neucha.className} text-center`}>
+          <h1 className={`${styles.fadeText} ${dosis.className} fs-1 text-center`}>
             Welcome to the PokeApp
           </h1>
         </div>
         <div className="w-100 text-center">
           <Link href="/List">
-            <button className={`${styles.btnList} btn btn-primary btn-lg m-3`}>
+            <button className={`${styles.btnList} btn btn-primary btn-lg m-3 opacity-75`}>
               Lista
             </button>
           </Link>
           <Link href="/About">
-            <button className={`${styles.btnAbout} btn btn-primary btn-lg m-3`}>
+            <button className={`${styles.btnAbout} btn btn-primary btn-lg m-3 opacity-75`}>
               About
             </button>
           </Link>
