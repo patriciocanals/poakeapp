@@ -7,7 +7,7 @@ export default function Pokemon({response}){
     console.log(response);
     const renderTypes = ()=> (
         response.types.map(type => (
-            <div key={type.slot} className={`d-flex justify-content-center gap-2 align-items-center text-uppercase p-1 my-1 w-25 text-center shadow border border-light rounded text-light ${type.type.name}`}>
+            <div key={type.slot} className={` ${styles.divtype} d-flex justify-content-center gap-2 align-items-center text-uppercase p-1 my-1 text-center shadow border border-light rounded text-light ${type.type.name}`}>
                 <Image unoptimized src={`https://storage.googleapis.com/nianticweb-media/pokemongo/types/${type.type.name}.png?cb=1`} height={40} width={40} alt="logotype"/>
                 <div>
                     {type.type.name}
@@ -49,11 +49,11 @@ export default function Pokemon({response}){
             </div>
             <div className="d-flex flex-wrap gap-2 justify-content-evenly align-items-center w-90">
                 <div className={`card p-1 mt-3 bg-transparent shadow-lg ${styles.card}`}>
-                    <div className="card-header text-center text-light">Abilities</div>
+                    <div className="card-header text-center text-light">ABILITIES</div>
                     <div className="card-body d-flex flex-column justify-content-evenly">{renderAbilities()}</div>
                 </div>
                 <div className={`card p-1 mt-3 bg-transparent shadow-lg ${styles.card}`}>
-                    <div className="card-header text-center text-light">Stats</div>
+                    <div className="card-header text-center text-light">STATS</div>
                     <div className="card-body">{renderStats()}</div>
                 </div>
             </div>

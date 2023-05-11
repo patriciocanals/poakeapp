@@ -22,6 +22,10 @@ export default function List({ response }) {
       <Header />
       <div className="bg-dark">
       <h2 className="text-center text-light p-2">List of Pokemon</h2>
+      <div className="d-flex justify-content-center gap-2 p-3">
+        <button disabled={!pokemon.previous} onClick={ () => fetchPokemon(pokemon.previous)} className="btn btn-primary">Previous</button>
+        <button disabled={!pokemon.next} onClick={ () => fetchPokemon(pokemon.next)} className="btn btn-primary">Next</button>
+      </div>
       <div className="d-flex flex-wrap justify-content-evenly gap-1">
         {
             pokemon.results.map( (pkmn,index) => (
