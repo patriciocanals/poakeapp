@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Header from "./components/Header";
+import Header from "../components/Header";
 import { useState } from "react";
-import PokemonCard from "./components/PokemonCard";
+import PokemonCard from "../components/PokemonCard";
 
 export default function List({ response }) {
   const [pokemon,setPokemon] = useState(response)
