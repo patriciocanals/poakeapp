@@ -2,7 +2,7 @@ import styles from '../../styles/Card.module.css'
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function PokemonCard({pokemon,index}) {
+export default function PokemonCard({pokemon}) {
   return (
     <>  
         <Link href={`/Pokemon/${pokemon.name}`} className=' text-decoration-none'>

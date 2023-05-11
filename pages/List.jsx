@@ -29,7 +29,7 @@ export default function List({ response }) {
       <div className="d-flex flex-wrap justify-content-evenly gap-1">
         {
             pokemon.results.map( (pkmn,index) => (
-                <PokemonCard key={index} pokemon={pkmn} id={index} index={index + offset}/>
+                <PokemonCard key={index} pokemon={pkmn} index={index + offset}/>
             ))
         }
       </div>
